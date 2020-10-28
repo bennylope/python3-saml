@@ -189,8 +189,9 @@ Read more at https://pythonhosted.org/an_example_pypi_project/setuptools.html
 
 Contains the unit test of the toolkit.
 
-In order to execute the test you only need to load the virtualenv with the toolkit installed on it and execute:
+In order to execute the test you need to load the virtualenv with the toolkit installed on it, install the test dependencies, and then run the tests:
 ```
+pip install -e ".[test]"
 python setup.py test
 ```
 The previous line will run the tests for the whole toolkit. You can also run the tests for a specific module. To do so for the auth module you would have to execute this:
